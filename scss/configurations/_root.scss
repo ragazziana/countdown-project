@@ -1,0 +1,24 @@
+:root{
+    
+    // Colors
+
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --main-blue: hsl(198, 86%, 60%);
+    --blue-accent: hsl(219, 86%, 60%);
+
+    // Fonts
+
+    font-size: 62.5%; /* 1rem = 10px */
+    
+    --ff-main: 'Montserrat', sans-serif;;
+
+    // Font Sizes
+
+    --fs-main: 1.6rem;
+
+    // Font Weights
+
+    --fw-medium: 500;
+    --fw-bold: 700;
+}

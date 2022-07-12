@@ -1,0 +1,29 @@
+.main__days,
+.main__hours,
+.main__minutes,
+.main__seconds{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.main__label-for-days,
+.main__label-for-hours,
+.main__label-for-minutes,
+.main__label-for-seconds{
+    font-size: 1rem;
+}
+
+.main__countdown{
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+    font-size: 5rem;
+}

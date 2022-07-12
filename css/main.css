@@ -1,0 +1,355 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --main-blue: hsl(198, 86%, 60%);
+  --blue-accent: hsl(219, 86%, 60%);
+  font-size: 62.5%; /* 1rem = 10px */
+  --ff-main: "Montserrat", sans-serif;
+  --fs-main: 1.6rem;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white);
+  font-family: var(--ff-main);
+  font-size: var(--fs-main);
+  color: var(--black);
+}
+
+.main__modal-background {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal__content {
+  width: 25%;
+  position: relative;
+  z-index: 3;
+  background-color: var(--white);
+  border-top: 1rem solid var(--main-blue);
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin: 3rem;
+  padding: 2rem;
+}
+
+.modal__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.modal__content-close {
+  font-size: 3rem;
+  display: flex;
+  justify-content: right;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.modal__form-description {
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+
+.modal__title {
+  font-family: var(--ff-main);
+  letter-spacing: 0.1rem;
+}
+
+.modal__text-input,
+.modal__email-input,
+.modal__text-button {
+  display: block;
+  width: 100%;
+}
+
+.modal__text-input,
+.modal__email-input {
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border: 1px solid #f1f1f2;
+}
+
+.modal__text-input[type=text] {
+  padding: 1rem;
+  font-family: var(--ff-main);
+  letter-spacing: 0.1rem;
+}
+
+.modal__email-input[type=email] {
+  padding: 1rem;
+  font-family: var(--ff-main);
+  letter-spacing: 0.1rem;
+}
+
+.modal__text-input:focus,
+.modal__email-input:focus {
+  outline: 2px solid var(--main-blue);
+  border-radius: 0.1rem;
+}
+
+.modal__text-button {
+  background-color: var(--main-blue);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--white);
+  border: none;
+  border-radius: 1rem;
+  padding: 1.6rem 3.2rem;
+  margin-top: 2rem;
+}
+
+.modal__text-button:hover {
+  background-color: var(--blue-accent);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--main-blue);
+}
+
+.main__logo-area {
+  width: 100%;
+  display: flex;
+  text-align: left;
+  padding: 2rem;
+  margin-bottom: 15vh;
+}
+
+.main__logo {
+  width: 4.5rem;
+}
+
+.main__title {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 5rem;
+  letter-spacing: 0.1rem;
+}
+
+.main__call-to-action-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  margin-top: 1rem;
+}
+
+.main__button-open-modal {
+  background-color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--main-blue);
+  border: none;
+  border-radius: 1rem;
+  padding: 1.6rem 3.2rem;
+  margin-top: 2rem;
+}
+
+.main__button-open-modal:hover {
+  color: var(--black);
+  transition: 0.5s;
+}
+
+.main__social-media-text {
+  margin: 0;
+  align-self: center;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.main__social-media {
+  margin-top: 7rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.main__social-media-google-play,
+.main__social-media-app-store {
+  width: 3rem;
+  fill: var(--white);
+  transition: 0.5s;
+}
+
+.main__social-media--hover:hover {
+  fill: var(--black);
+}
+
+figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__image {
+  width: 100%;
+  max-width: 55rem;
+  min-width: 30rem;
+  padding: 2rem;
+}
+
+.main__days,
+.main__hours,
+.main__minutes,
+.main__seconds {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.main__label-for-days,
+.main__label-for-hours,
+.main__label-for-minutes,
+.main__label-for-seconds {
+  font-size: 1rem;
+}
+
+.main__countdown {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 5rem;
+}
+
+.main__image {
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  main {
+    width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+  figure {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+  .main__image {
+    width: 100%;
+    max-width: 50rem;
+    min-width: 30rem;
+    margin-bottom: 0;
+  }
+  .main__countdown {
+    font-size: 3rem;
+  }
+  .main__days,
+.main__hours,
+.main__minutes,
+.main__seconds {
+    margin: 1rem;
+    padding: 0;
+  }
+  .main__label-for-days,
+.main__label-for-hours,
+.main__label-for-minutes,
+.main__label-for-seconds {
+    font-size: 1rem;
+  }
+  .main__call-to-action-text {
+    text-align: center;
+  }
+  .modal__content {
+    width: 40%;
+  }
+  .main__logo-area {
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 1rem;
+  }
+  .main__logo {
+    width: 10rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  body {
+    flex-wrap: wrap;
+  }
+  .main__title {
+    font-size: 3rem;
+  }
+  .modal__content {
+    width: 100%;
+  }
+  figure {
+    display: unset;
+  }
+}/*# sourceMappingURL=main.css.map */

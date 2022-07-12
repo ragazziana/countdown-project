@@ -1,0 +1,108 @@
+@media (max-width: 1024px){
+    
+    body{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+    }
+
+    main{
+        width: 100%;
+        height: 100%;
+
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__content{
+       width: 100%;
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding: 3rem;
+    }
+
+    figure{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    .main__image{
+        width: 100%;
+        max-width: 50rem;
+        min-width: 30rem;
+        margin-bottom: 0;
+    }
+
+
+    // Timer
+
+    .main__countdown{
+        font-size: 3rem;
+    }
+
+    .main__days,
+    .main__hours,
+    .main__minutes,
+    .main__seconds{
+        
+        margin: 1rem;
+        padding: 0;
+}
+
+    .main__label-for-days,
+    .main__label-for-hours,
+    .main__label-for-minutes,
+    .main__label-for-seconds{
+        font-size: 1rem;
+        
+}
+
+    .main__call-to-action-text{
+        text-align: center;
+    }
+
+    .modal__content{
+        width: 40%;
+    }
+
+    .main__logo-area{ 
+        justify-content: center;
+        margin-bottom: 0;
+        padding: 1rem;
+    }
+    
+    .main__logo{
+        width: 10rem;
+    }
+
+   
+
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+
+    body{
+        flex-wrap: wrap;
+    }
+
+    .main__title{
+        font-size: 3rem;
+    }
+
+    .modal__content{
+        width: 100%;
+    }
+
+    figure{
+        display:unset ;
+    }
+}
