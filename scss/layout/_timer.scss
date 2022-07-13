@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     margin: 1rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .main__label-for-days,
@@ -18,12 +18,11 @@
 }
 
 .main__countdown{
-    width: 80%;
+    width: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-top: 2rem;
-    font-size: 5rem;
+    font-size: 3rem;
 }

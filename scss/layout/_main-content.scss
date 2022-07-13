@@ -1,116 +1,90 @@
 main{
     width: 100%;
     height: 100%;
-
-    display: flex;
-    align-items: center;
-}
-
-.main__content{
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-
-    background-color: var(--main-blue);
-}
-
-.main__logo-area{
-    width: 100%;
-
-    display: flex;
-    text-align: left;
-
-    padding: 2rem;
-    margin-bottom: calc(100vh - 85vh);
 }
 
 .main__logo{
-    width: 4.5rem;
+    width: 7rem;
 }
 
-.main__title{
-    text-align: left;
-    text-transform: uppercase;
-
-    font-weight: 700;
-    font-size: 5rem;
-    
-    letter-spacing: .1rem;
+.main__social-media-text{
+    font-size: 1.2rem;
+    align-self: center;
+    margin-right: 1rem;
 }
 
-.main__call-to-action-text{
-    font-size: 1.6rem;
-    letter-spacing: .1rem;
-    margin-top: 1rem;
+.main__social-media-app-store,
+.main__social-media-google-play{
+    width: 3rem;
+    fill: var(--white);
 }
 
-.main__button-open-modal{
-    background-color: var(--white);
-
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-
-    color: var(--main-blue);
-
-    border: none;
-    border-radius: 1rem;  
-
-    padding: 1.6rem 3.2rem;
-    margin-top: 2rem;
-}
-
-.main__button-open-modal:hover{
-    color: var(--black);
+.main__social-media-app-store:hover,
+.main__social-media-google-play:hover{
+    fill: var(--blue-accent);
     transition: .5s;
 }
 
 
-.main__social-media-text{
-    margin: 0;
-    align-self: center;
-    font-size: 1.2rem;
-    color: var(--white);
+.main__social-media-app-store{
+    margin-right: 1rem;
 }
 
 .main__social-media{
-    margin-top: 7rem;
     display: flex;
-    gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
 }
 
-.main__social-media-google-play,
-.main__social-media-app-store{
-    width: 3rem;
-    fill: var(--white);
-    transition: .5s;
-}
 
-.main__social-media--hover:hover{
-    fill: var(--black);
-    
-}
-
-figure{
+.main__content{
     width: 100%;
-    height: 100%;
+    height: 50vh;
+    padding: 3rem;
+    width: 100%;
+    text-align: center;
+    background-color: var(--main-blue);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.main__title{
+    font-size: 5rem;
+}
+
+figure{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    background-color: var(--white);
+    text-align: center;
 }
 
 .main__image{
-    width: 100%;
-    max-width: 55rem;
-    min-width: 30rem;
+    width: 36rem;
+    margin: 4rem;
+}
 
-    padding: 2rem;
+.main__button-open-modal{
+    text-align: center;
+    padding: 1.6rem 3.2rem;
+    border: 0;
+    border-radius: .5rem;
+    background-color: var(--white);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    font-weight: 700;
+}
+
+.main__button-open-modal:hover{
+    color: var(--main-blue);
+    transition: .5s;
 }

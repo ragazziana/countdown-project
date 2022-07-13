@@ -1,0 +1,66 @@
+@media (min-width: 1213px){
+    main{
+        height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .main__content{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        background-color: var(--main-blue);
+    }
+
+    .main__logo-area{
+        text-align: left;
+        margin-bottom: 10rem;
+    }
+
+    figure{
+        height: 100vh;
+    }
+
+    .main__button-area{
+        width: 100%;
+        text-align: center;
+    }
+
+    .main__button-open-modal{
+        width: 50%;
+    }
+
+    .main__image{
+        width: 52.4rem;
+    }
+
+    .modal__content{
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+    .modal__content{
+        width: 50%;
+    }
+
+    .main__image{
+        width: 36rem;
+    }
+}
+
+@media only screen and (min-device-width: 480px) 
+                   and (max-device-width: 844px) 
+                   and (orientation: landscape) {
+
+    .main__content{
+        height: 100vh;
+    }
+
+    figure{
+        height: 100vh;
+    }
+
+}
