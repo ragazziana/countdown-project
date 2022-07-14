@@ -191,6 +191,7 @@ figure {
 
 .main__image {
   width: 36rem;
+  height: 30rem;
   margin: 4rem;
 }
 
@@ -299,11 +300,26 @@ figure {
     width: 36rem;
   }
 }
-@media only screen and (min-device-width: 480px) and (max-device-width: 844px) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 844px) and (orientation: landscape) {
   .main__content {
-    height: 100vh;
+    height: 120vh;
   }
   figure {
-    height: 100vh;
+    height: 110vh;
+  }
+  .main__image {
+    width: 20rem;
+  }
+}
+@media only screen and (max-width: 500px) and (orientation: portrait) {
+  .main__content {
+    height: 80vh;
+  }
+  figure {
+    height: 50vh;
+  }
+  .main__image {
+    width: 20rem;
+    background-color: chartreuse;
   }
 }/*# sourceMappingURL=main.css.map */
