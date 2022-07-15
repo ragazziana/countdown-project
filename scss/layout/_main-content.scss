@@ -1,8 +1,3 @@
-main{
-    width: 100%;
-    height: 100%;
-}
-
 .main__logo{
     width: 7rem;
 }
@@ -25,7 +20,6 @@ main{
     transition: .5s;
 }
 
-
 .main__social-media-app-store{
     margin-right: 1rem;
 }
@@ -37,15 +31,12 @@ main{
     margin-top: 3rem;
 }
 
-
 .main__content{
     width: 100%;
     height: 50vh;
     padding: 3rem;
-    width: 100%;
     text-align: center;
     background-color: var(--main-blue);
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,15 +53,16 @@ figure{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     background-color: var(--white);
     text-align: center;
 }
 
 .main__image{
-    width: 36rem;
-    height: 30rem;
-    margin: 4rem;
+    width: 100%;
+    max-width: 57.8rem;
+    min-width: 31.7rem;
+    margin: 2rem;
+    padding: 2rem;
 }
 
 .main__button-open-modal{
