@@ -141,7 +141,7 @@ body, html {
 
 .main__social-media-app-store:hover,
 .main__social-media-google-play:hover {
-  fill: var(--blue-accent);
+  fill: var(--black);
   transition: 0.5s;
 }
 
@@ -252,7 +252,7 @@ figure {
     transform: translate(0, 0px);
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1280px) {
   main {
     display: flex;
     flex-direction: row-reverse;
@@ -283,15 +283,46 @@ figure {
   }
   .main__call-to-action-text {
     font-size: 1.8rem;
+    margin-top: 1rem;
   }
   .main__countdown {
     font-size: 5rem;
+    margin-top: 1rem;
   }
   .main__button-open-modal {
-    padding: 1.6rem 4.2rem;
+    padding: 1.6rem 5rem;
+    margin-top: 1rem;
+  }
+  .main__social-media {
+    margin-top: 3.2rem;
+  }
+  .main__image {
+    width: 54.9rem;
   }
 }
-@media (min-width: 768px) and (orientation: landscape) {
+@media (max-width: 1024px) and (orientation: landscape) {
+  .main__content {
+    height: 100vh;
+  }
+  figure {
+    height: 100vh;
+  }
+  .main__image {
+    width: 40rem;
+  }
+}
+@media screen and (min-width: 409px) and (max-width: 1276px) {
+  .main__content {
+    height: 50vh;
+  }
+  figure {
+    height: 50vh;
+  }
+  .main__image {
+    width: 37rem;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 390px) and (orientation: landscape) {
   main {
     display: flex;
     flex-direction: row-reverse;
@@ -301,5 +332,8 @@ figure {
   }
   figure {
     height: 100vh;
+  }
+  .main__image {
+    width: 37rem;
   }
 }/*# sourceMappingURL=main.css.map */
