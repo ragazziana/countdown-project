@@ -310,6 +310,9 @@ figure {
   .main__image {
     width: 40rem;
   }
+  .modal__content {
+    width: 40%;
+  }
 }
 @media screen and (min-width: 409px) and (max-width: 1276px) {
   .main__content {
@@ -323,9 +326,8 @@ figure {
   }
 }
 @media screen and (max-width: 1023px) and (min-width: 390px) and (orientation: landscape) {
-  main {
-    display: flex;
-    flex-direction: row-reverse;
+  figure {
+    background-color: pink;
   }
   .main__content {
     height: 100vh;
@@ -335,5 +337,34 @@ figure {
   }
   .main__image {
     width: 37rem;
+  }
+}
+@media screen and (max-width: 1366px) and (min-width: 1024px) and (orientation: portrait) {
+  .main__image {
+    width: 100rem;
+  }
+  .main__logo {
+    width: 12rem;
+  }
+  .modal__content {
+    width: 40%;
+  }
+  .main__title {
+    font-size: 10rem;
+  }
+  .main__call-to-action-text {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+  .main__countdown {
+    font-size: 8rem;
+    margin-top: 1rem;
+  }
+  .main__button-open-modal {
+    padding: 1.6rem 10rem;
+    margin-top: 1rem;
+  }
+  .main__social-media {
+    margin-top: 3.2rem;
   }
 }/*# sourceMappingURL=main.css.map */
