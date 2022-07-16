@@ -326,9 +326,6 @@ figure {
   }
 }
 @media screen and (max-width: 1023px) and (min-width: 390px) and (orientation: landscape) {
-  figure {
-    background-color: pink;
-  }
   .main__content {
     height: 100vh;
   }
